@@ -4,6 +4,9 @@ const PORT = process.env.PORT || 5050;
 
 const app = express();
 
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 app.get("/api/v1", (req, res) => {
     res.json({
         success: true,
