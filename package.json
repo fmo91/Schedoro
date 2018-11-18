@@ -5,11 +5,15 @@
   "license": "MIT",
   "scripts": {
     "start": "node index",
+    "start:dev": "nodemon index",
     "heroku-postbuild": "cd client && yarn && yarn run build"
   },
   "dependencies": {
     "express": "^4.16.4",
     "jest": "^23.6.0",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
   }
 }
